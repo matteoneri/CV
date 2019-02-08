@@ -2,12 +2,13 @@
 % -- XeLaTeX => PDF (BIBER)
 
 \documentclass[]{cv-style}     % Add 'print' as an option into the square bracket to remove colours from this template for printing. 
-                                      % Add 'espanol' as an option into the square bracket to change the date format of the Last Updated Text
+                               % Add 'espanol' as an option into the square bracket to change the date format of the Last Updated Text
 %\setdefaultlanguage{spanish}
 %\sethyphenation[variant=spanish]{}{}  % Add words between the {} to avoid them to be cut 
 
 \usepackage{graphicx}
 \usepackage{csquotes}
+\usepackage[document]{ragged2e}
 
 \bibliography{bibliography}
 
@@ -37,12 +38,12 @@ Hungary
 \href{https://github.com/matteoneri}{github.com/matteoneri}
 ~
 \href{mailto:nremtt@gmail.com}{nremtt@gmail.com}
-\href{mailto:Neri\_Matteo@phd.ceu.edu}{Neri\_Matteo@phd.ceu.edu}
+\href{mailto:Neri_Matteo@phd.ceu.edu}{Neri\_Matteo@phd.ceu.edu}
 %
 \section{languages}
 \it{italian}: mother tongue
 \it{english}: language currently used
-\it{spanish}: basic level
+\it{spanish}: intermediate level
 \end{aside}
 %----------------------------------------------------------------------------------------
 % EDUCATION
@@ -65,25 +66,6 @@ Hungary
 The courses are provided by a collaboration among SISSA, ICTP, Politecnico di Torino
 and a consortium of universities from Paris (Paris Sud University, Pierre and Marie Curie University and Paris Diderot University).
 Strong \href{http://www.lps.ens.fr/~benamar/sc/physics-of-complex-systems/}{knowledge} in statistical mechanics (and its application in different fields), inference, algorithms, complex networks, disordered systems, game theory, inference and learning.
-
-%The \href{http://www.lps.ens.fr/~benamar/sc/physics-of-complex-systems/}{topics} treated are mainly statistical mechanics and inference and their applications in different fields. My aim is starting working on machine learning and complex networks.
-%\begin{footnotesize}
-%
-%\begin{itemize}
-%	\item Introduction to quantum mechanics, quantum statistics and field theory
-%    \item Algorithms for optimization and statistical inference
-%	\item Applied probability and stochastic processes
-% 	\item Complex systems modelling project
-%	\item Introduction to numerical methods and simulation techniques
-%	\item Statistical physics and biophysics
-%	\item Condensed matter physics
-% 	\item Advanced simulation techniques
-% 	\item Chemical and physical aspects of soft matter
-%	\item Statistical field theory and non equilibrium systems
-%	\item Non linear and fluid dynamics
-%    \item Disordered Systems
-%\end{itemize}
-%\end{footnotesize}
 }
 %------------------------------------------------
 \entry
@@ -106,30 +88,41 @@ Strong \href{http://www.lps.ens.fr/~benamar/sc/physics-of-complex-systems/}{know
 \section{experiences}
 \begin{entrylist}
 \entry
-{Fall Term\\2018}
-{Teaching Assistant - Scientific Python}
-{\href{http://www.ceu.edu}{Math Department at CEU}, Budapest, HU}
+{April 2018 - \\Present}
+{Data Science Consultant}
+{\href{http://www.fna.fi}{@ Finantial Networks Analytics}, London, UK}
+{\footnotesize{\textbf{Main solution area: Financial Crime \& Conduct Risk.}}\\
+FNA is a fast-growing, deep technology company and a leader in Regulatory and Supervisory
+Technology. FNA's mission is to make the financial system safer and more efficient. FNA's SaaS Platform allows financial institutions to map and monitor complex financial networks and to simulate operational and financial risks. FNA’s clients include the world’s largest central banks, financial market infrastructures, and leading financial institutions.
+}
+
+\entry
+{Winter Term\\2019}
+{Teaching Assistant - Statistical Methods}
+{\href{http://www.ceu.edu}{Network and Data Science Dep. @ CEU},
+\begin{flushright}Budapest, HU
+ \end{flushright}
+}
 {}
 \entry
-{April 2018 - \\Present}
-{Data Scientist}
-{\href{http://www.fna.fi}{Finantial Networks Analytics}, London, UK}
-{FNA is a fast-growing, deep technology company and a leader in Regulatory and Supervisory
-Technology. FNA's mission is to make the financial system safer and more efficient. FNA's SaaS Platform allows financial institutions to map and monitor complex financial networks and to simulate operational and financial risks. FNA’s clients include the world’s largest central banks, financial market infrastructures, and leading financial institutions.}
+{Fall Term\\2018}
+{Teaching Assistant - Scientific Python}
+{\href{http://www.ceu.edu}{Math Department @ CEU},
+\begin{flushright}Budapest, HU
+ \end{flushright}
+}
+{}
 \entry
 {March -\\June 2017}
 {Research Internship}
-{\href{http://www.cmla.ens-cachan.fr/}{CMLA} at \href{http://www.ens-cachan.fr/}{ENS Saclay}, Paris, FR}
+{\href{http://www.cmla.ens-cachan.fr/}{CMLA} @ \href{http://www.ens-cachan.fr/}{ENS Saclay}, Paris, FR}
 {The purpose of the work was to analyze time-varying networks where Dynamic Resource Allocation Strategy has been adopted in order to treat the epidemic process in a high-resolution context. Considering evolving networks during epidemic control is an important step through real networks applications.}
-%\entry
-%{April,10th -\\May, 5th 2017}
-%{International Centre for Theoretical Physics}
-%{Trieste, Italy}
-%{\href{http://indico.ictp.it/event/7958/overview}{Spring College on the Physics of Complex Systems}}
+\end{entrylist}
+\begin{entrylist}
 \entry
 {July 2014 -\\March 2015}
 {Research Internship}
-{\href{http://home.infn.it/it/}{National Institute of Nuclear Physics (INFN)}, Bologna, IT}
+{\href{http://home.infn.it/it/}{@ National Institute of Nuclear Physics (INFN)}, Bologna, IT}
 {
 I worked inside the CMS Collaboration (CMS is one of the four general purpose
     experiments at LHC at CERN) at one tool that intends to study the Run-1
@@ -150,15 +143,18 @@ data management towards a dynamic data management.
 %{Masterclass Hands on Particle Physics}
 \end{entrylist}
 
-\pagebreak
-
 \section{schools and conferences}
 \begin{entrylist}
+\entry
+{Jan 7th-11th\\2019}
+{\href{http://bigdat2019.irdta.eu/}{International Winter School on Big Data}}
+{University of Cambridge, Cambridge, UK}
+{Research training event with a global scope aiming at updating participants on the most recent advances in the critical and fast developing area of big data}
 \entry
 {July 15th-21st\\2018}
 {\href{https://sites.google.com/view/varennacs2018}{International Summer School Enrico Fermi on\\Computational Social Science and Complex Systems}}
 {Varenna, IT}
-{The Enrico Fermi Schools are a highly prestigious series of summer schools of the Italian Physical Society with a tradition of more than 60 years and with many Nobel laureates as lecturers. The International Schools devote special care in planning the program and produces proceedings of the school that have become classics. }
+{The Enrico Fermi Schools are a highly prestigious series of summer schools of the Italian Physical Society with a tradition of more than 60 years and with many Nobel laureates as lecturers.}
 \entry
 {April 12th-13th\\2018}
 {\href{http://ibs-italy.org/?page_id=703&lang=en}{COSTNET Networking Biostatistics}}
@@ -167,7 +163,7 @@ data management towards a dynamic data management.
 \entry
 {March 15th-16th\\2018}
 {\href{https://www.oxforduniversitystores.co.uk/conferences-events/statistics/statistics/costnet-sandpit-meeting}{COSTNET Sandpit Meeting}}
-{University of Oxford, UK}
+{University of Oxford, Oxford, UK}
 {Exploring (massive) network data sets, Network Modelling, Network Inference and Prediction}
 \entry
 {June 19th-22nd\\2017}
@@ -185,10 +181,11 @@ data management towards a dynamic data management.
  \begin{itemize}
   \item GNU-Linux
  \end{itemize}
- {\color{gray}\headingfont Programming Languages}
+ {\color{gray}\headingfont Programming Languages & Databases}
  \begin{itemize}
   \item Python [3+ years experience]
   \item C++ [3+ months]
+  \item SQL (MariaDB)
  \end{itemize}
  {\color{gray}\headingfont Frameworks}
  \begin{itemize}
@@ -204,11 +201,13 @@ data management towards a dynamic data management.
  \end{itemize}
  }
  \par\vspace{.5\parskip}
+ 
+\pagebreak
 %----------------------------------------------------------------------------------------
 % PUBBLICATIONS
 %----------------------------------------------------------------------------------------
 \section{pubblications}
-\printbibsection{article}{article in international peer-reviewed journal} 
+\printbibsection{article}{article in international peer-reviewed journals} 
 %----------------------------------------------------------------------------------------
 % AWARDS SECTION
 %----------------------------------------------------------------------------------------
